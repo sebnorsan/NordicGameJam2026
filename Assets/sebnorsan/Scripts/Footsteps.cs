@@ -81,7 +81,7 @@ public class Footsteps : MonoBehaviour
 	}
     private void CheckForMaterial()
     {
-		var player = FindFirstObjectByType<PlayerController>();
+		var player = FindAnyObjectByType<PlayerController>();
 
 
 		Collider[] groundColliders = Physics.OverlapSphere(

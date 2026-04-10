@@ -43,7 +43,7 @@ namespace EvolveGames
             float speed = new Vector3(player.velocity.x, 0, player.velocity.z).magnitude;
 
             if (speed < ToggleSpeed) return;
-            if (!FindFirstObjectByType<PlayerController>().isGrounded) return;
+            if (!FindAnyObjectByType<PlayerController>().isGrounded) return;
             PlayMotion(HeadBobMotion());
         }
 

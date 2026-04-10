@@ -20,7 +20,7 @@ public class InteractionHandler : MonoBehaviour
 
 	private void Start()
 	{
-		playerController = FindFirstObjectByType<PlayerController>();
+		playerController = FindAnyObjectByType<PlayerController>();
 	}
 
 	Ray ray;

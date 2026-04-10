@@ -23,7 +23,7 @@ public class ActionTarget : MonoBehaviour
 	private void Teleport()
 	{
 		if (teleportToPlayer)
-			transform.position = FindFirstObjectByType<PlayerController>().transform.position;
+			transform.position = FindAnyObjectByType<PlayerController>().transform.position;
 	}
 	private void OnDestroy()
 	{

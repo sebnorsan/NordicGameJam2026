@@ -74,7 +74,7 @@ public class EventManager : MonoBehaviour
 	}
 	public void RandomizePitchOnSound(AudioClip clip, float min, float max)
 	{
-		var audioSources = FindObjectsByType<AudioSource>(FindObjectsSortMode.None);
+		var audioSources = FindObjectsByType<AudioSource>();
 		foreach (var a in audioSources)
 			if (a.clip == clip)
 				a.pitch = Random.Range(min, max);
@@ -99,7 +99,7 @@ public class EventManager : MonoBehaviour
 	}
 	public void StopThisSound(AudioClip clip)
 	{
-		var audioSources = FindObjectsByType<AudioSource>(FindObjectsSortMode.None);
+		var audioSources = FindObjectsByType<AudioSource>();
 		foreach (var a in audioSources)
 			if (a.clip == clip)
 				Destroy(a.gameObject);
@@ -125,7 +125,7 @@ public class EventManager : MonoBehaviour
 		var data = GetThisSound(libId, audioId);
 		if (data == null) return null;
 
-		var audioSources = FindObjectsByType<AudioSource>(FindObjectsSortMode.None);
+		var audioSources = FindObjectsByType<AudioSource>();
 		foreach (var a in audioSources)
 			if (a.clip == data.audioToPlay)
 				return a;
