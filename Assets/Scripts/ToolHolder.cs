@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class ToolHolder : MonoBehaviour
 {
@@ -31,6 +32,15 @@ public class ToolHolder : MonoBehaviour
 	{
 		if (toolsHeld.Contains(tool))
 			toolsHeld.Remove(tool);
+	}
+	public bool CheckKey(int id)
+	{
+		if (keyIdHeld.Contains(id))
+		{
+			RemoveKey(id);
+			return true;
+		}
+		return false;
 	}
 	public void AddKey(int id)
 	{

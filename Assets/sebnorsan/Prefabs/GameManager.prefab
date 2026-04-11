@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5149687495095824868}
   - component: {fileID: 8855574916616511618}
+  - component: {fileID: 7337252035564994842}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -59,6 +60,22 @@ MonoBehaviour:
       maxDistance: 500
       subtitlesEnabled: 0
       subtitles: []
+  screenSummonPrefab: {fileID: 5234931018193888805, guid: 5648e1116ca3d20418a9b06c54c2882d, type: 3}
+  bonusRoomScene: {}
+--- !u!114 &7337252035564994842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3813109822805289216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916309ad94a8ec841a2f823f1a990e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  toolsHeld: 
+  keyIdHeld: 
 --- !u!1 &6900684961926385251
 GameObject:
   m_ObjectHideFlags: 0

@@ -386,6 +386,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 6
+  sphereRadius: 0.2
+  ignoreLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  ignoreTags: []
   interactionKeyAnimator: {fileID: 0}
   isTalking: 0
 --- !u!1 &6811790093627766756
@@ -522,7 +527,7 @@ MonoBehaviour:
   playerCamera: {fileID: 4001978501861734272}
   walkingSpeed: 4.5
   crouchSpeed: 1
-  runningSpeed: 6
+  runningSpeed: 10
   jumpSpeed: 8
   lookSpeed: 2
   lookXLimit: 80
@@ -548,7 +553,7 @@ MonoBehaviour:
   isGrounded: 0
   inputVertical: 0
   inputHorizontal: 0
-  dev: 1
+  dev: 0
   footstepStopThreshold: 0.1
 --- !u!33 &5158395717258779853
 MeshFilter:
