@@ -351,24 +351,24 @@ public class PlayerController : MonoBehaviour
 		bool crouchSphere = Physics.CheckSphere(transform.position + new Vector3(0, .66f, 0), .3f, LayerMask.GetMask("Ground", "MovingPlatform"));
 
 		// Crouching
-		if (Input.GetKeyDown(crouchKey))
-			SetCrouchHeight(crouchHeight);
-		else if (Input.GetKeyUp(crouchKey) && !crouchSphere)
-			ResetSetCrouchHeight(initialCrouchHeight);
+		//if (Input.GetKeyDown(crouchKey))
+		//	SetCrouchHeight(crouchHeight);
+		//else if (Input.GetKeyUp(crouchKey) && !crouchSphere)
+		//	ResetSetCrouchHeight(initialCrouchHeight);
 
-		if (Input.GetKey(crouchKey))
-		{
-			isCrouching = true;
-			walkingSpeed = Mathf.Lerp(walkingSpeed, crouchSpeed, 6 * Time.deltaTime);
-		}
-		else if (!crouchSphere)
-		{
-			isCrouching = false;
-			walkingSpeed = Mathf.Lerp(walkingSpeed, initialWalkingSpeed, 4 * Time.deltaTime);
+		//if (Input.GetKey(crouchKey))
+		//{
+		//	isCrouching = true;
+		//	walkingSpeed = Mathf.Lerp(walkingSpeed, crouchSpeed, 6 * Time.deltaTime);
+		//}
+		//else if (!crouchSphere)
+		//{
+		//	isCrouching = false;
+		//	walkingSpeed = Mathf.Lerp(walkingSpeed, initialWalkingSpeed, 4 * Time.deltaTime);
 
-			if (transform.localScale.y == crouchHeight)
-				ResetSetCrouchHeight(initialCrouchHeight);
-		}
+		//	if (transform.localScale.y == crouchHeight)
+		//		ResetSetCrouchHeight(initialCrouchHeight);
+		//}
 	}
 
 	void ResetRebound() => rebound = false;

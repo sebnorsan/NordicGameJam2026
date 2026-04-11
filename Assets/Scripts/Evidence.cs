@@ -76,6 +76,5 @@ public enum Tool
 {
     None,
     Mop,
-	Screwdriver,
 	Knife
 }
