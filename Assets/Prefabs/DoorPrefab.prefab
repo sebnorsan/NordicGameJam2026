@@ -49,8 +49,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f824ec4e6847f2e4295f3bbeaf283659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  locked: 1
-  keyIdLocked: 1
+  locked: 0
+  keyIdLocked: 0
   smokePfx: {fileID: 3806395402223542739}
   unbrokenDoor: {fileID: 5436581538024766063}
   brokenDoor: {fileID: 4863137090447069243}
