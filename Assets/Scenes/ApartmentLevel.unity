@@ -21313,6 +21313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 939679925}
   - component: {fileID: 939679924}
+  - component: {fileID: 939679926}
   m_Layer: 0
   m_Name: EvidenceManager
   m_TagString: Untagged
@@ -21333,6 +21334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EvidenceManager
   evidenceOrder: []
+  evidenceActive: 
   specialEvidenceActive: 
   evidenceEvents: []
 --- !u!4 &939679925
@@ -21350,6 +21352,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &939679926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939679923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ac106199037da4ebaabd8df7fad733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &944967281
 GameObject:
   m_ObjectHideFlags: 0
@@ -31713,6 +31727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b1ba2987178c542b277a8cc3929dec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScreenSummonFadeToTrans
+  timeTaken: 3
 --- !u!1001 &2089386501
 PrefabInstance:
   m_ObjectHideFlags: 0

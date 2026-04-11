@@ -133,7 +133,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Canvas/Flow/Instructions
+    path: Canvas/Instructions
     classID: 1
     script: {fileID: 0}
     flags: 0
@@ -172,7 +172,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Canvas/Flow/Instructions
+    path: Canvas/Instructions
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -212,7 +212,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3214685678
+      path: 2175115987
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -221,7 +221,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3214685678
+      path: 2175115987
       attribute: 538195251
       script: {fileID: 0}
       typeID: 224
@@ -367,7 +367,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Canvas/Flow/Instructions
+    path: Canvas/Instructions
     classID: 1
     script: {fileID: 0}
     flags: 0
@@ -406,7 +406,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Canvas/Flow/Instructions
+    path: Canvas/Instructions
     classID: 224
     script: {fileID: 0}
     flags: 0
