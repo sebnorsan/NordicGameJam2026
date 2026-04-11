@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f8a5a04a3b145299afb77db9d03c233, type: 3}
   m_Name: Move_Wave3
   m_EditorClassIdentifier: 
-  effectName: w3
+  effectTag: w3
   startCharIndex: 0
   charLength: 132
   animationType: 2
   fixedDuration: 0
   durationPerChar: 0.6
-  noDelayForChars: 1
   timeBetweenChars: 0.1
+  noDelayForChars: 1
   reverseCharOrder: 0
   easingCurve:
     serializedVersion: 2
@@ -54,5 +54,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  startOffset: {x: 0, y: -10}
-  endOffset: {x: 0, y: 10}
+  clampBetween0And1: 0
+  startOffset: {x: 0, y: -1}
+  endOffset: {x: 0, y: 1}
