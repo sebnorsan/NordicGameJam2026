@@ -15863,7 +15863,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: 765f6b5702c274f478f021c7ea502e62, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 33439342ff9e88d4bbfdfd109686cf79, type: 2}
+      objectReference: {fileID: 2100000, guid: f3c1b70677ff0db48a8df04504f2c050, type: 2}
     - target: {fileID: 919132149155446097, guid: 765f6b5702c274f478f021c7ea502e62, type: 3}
       propertyPath: m_Name
       value: DiningChair (1)
@@ -19357,7 +19357,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: 765f6b5702c274f478f021c7ea502e62, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 33439342ff9e88d4bbfdfd109686cf79, type: 2}
+      objectReference: {fileID: 2100000, guid: f3c1b70677ff0db48a8df04504f2c050, type: 2}
     - target: {fileID: 919132149155446097, guid: 765f6b5702c274f478f021c7ea502e62, type: 3}
       propertyPath: m_Name
       value: DiningChair (2)
@@ -25556,7 +25556,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: 765f6b5702c274f478f021c7ea502e62, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 33439342ff9e88d4bbfdfd109686cf79, type: 2}
+      objectReference: {fileID: 2100000, guid: f3c1b70677ff0db48a8df04504f2c050, type: 2}
     - target: {fileID: 919132149155446097, guid: 765f6b5702c274f478f021c7ea502e62, type: 3}
       propertyPath: m_Name
       value: DiningChair
@@ -26880,7 +26880,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: 70d13408eaede1a499ad005e6809390a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 33439342ff9e88d4bbfdfd109686cf79, type: 2}
+      objectReference: {fileID: 2100000, guid: f3c1b70677ff0db48a8df04504f2c050, type: 2}
     - target: {fileID: 919132149155446097, guid: 70d13408eaede1a499ad005e6809390a, type: 3}
       propertyPath: m_Name
       value: Bathtub
@@ -27799,7 +27799,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: 765f6b5702c274f478f021c7ea502e62, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 33439342ff9e88d4bbfdfd109686cf79, type: 2}
+      objectReference: {fileID: 2100000, guid: f3c1b70677ff0db48a8df04504f2c050, type: 2}
     - target: {fileID: 919132149155446097, guid: 765f6b5702c274f478f021c7ea502e62, type: 3}
       propertyPath: m_Name
       value: DiningChair (3)
@@ -28092,7 +28092,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: 76ec05eac8d76f240b97b2ebe9deec35, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 33439342ff9e88d4bbfdfd109686cf79, type: 2}
+      objectReference: {fileID: 2100000, guid: f3c1b70677ff0db48a8df04504f2c050, type: 2}
     - target: {fileID: 919132149155446097, guid: 76ec05eac8d76f240b97b2ebe9deec35, type: 3}
       propertyPath: m_Name
       value: DiningTable
