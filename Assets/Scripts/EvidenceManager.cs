@@ -58,6 +58,8 @@ public class EvidenceManager : MonoBehaviour
     }
     public string GetEvidenceRemaining()
     {
+        Destroy(gameObject, .1f);
+
         if (!specialEvidenceActive.IsNullOrEmpty()) 
             return specialEvidenceActive;
 
