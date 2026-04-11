@@ -28554,8 +28554,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3813109822805289216, guid: b421e02e727b4b44c97a6a1ffbe22bc3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2087151226}
   m_SourcePrefab: {fileID: 100100000, guid: b421e02e727b4b44c97a6a1ffbe22bc3, type: 3}
+--- !u!1 &2087151225 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3813109822805289216, guid: b421e02e727b4b44c97a6a1ffbe22bc3, type: 3}
+  m_PrefabInstance: {fileID: 2087151224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2087151226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087151225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b1ba2987178c542b277a8cc3929dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScreenSummonFadeToTrans
 --- !u!1 &2136248057
 GameObject:
   m_ObjectHideFlags: 0
