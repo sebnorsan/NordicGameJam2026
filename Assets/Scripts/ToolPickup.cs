@@ -1,7 +1,6 @@
 using UnityEngine;
-using System.Collections.Generic;
 
-public class Evidence : InteractionProgression, IInteractable
+public class ToolPickup : InteractionProgression, IInteractable
 {
 	[Space(5)]
 
@@ -10,8 +9,12 @@ public class Evidence : InteractionProgression, IInteractable
 
 	[Space(5)]
 
-	public Tool toolToUse;
-	public string evidenceName;
+	public Tool toolToAquire;
+
+
+	[Header("If key ID = -1 then no key will be added to the ToolHolder")]
+
+	public int keyIdToAquire = -1;
 
 	[Space(5)]
 
@@ -43,28 +46,11 @@ public class Evidence : InteractionProgression, IInteractable
 		if (progressionBased)
 			base.FinishAnimation();
 
+		if (keyIdToAquire != -1)
+			ToolHolder.instance.AddKey(keyIdToAquire);
+		if (toolToAquire != Tool.None)
+			ToolHolder.instance.AddTool(toolToAquire);
+
 		Destroy(gameObject);
 	}
-
-	public bool GetToolAvailable(List<Tool> toolsAvailable)
-	{
-		if (toolsAvailable == null)
-		{
-			if (toolToUse == Tool.None)
-				return true;
-			else
-				return false;
-		}
-
-		if (toolsAvailable.Contains(toolToUse))
-			return true;
-		else
-			return false;
-	}
-}
-
-public enum Tool
-{
-    None,
-    Mop
 }
