@@ -110,101 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blood splatter_0
+      name: 1_BloodSplatter_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 187
-        width: 57
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df825fdac8c42d14d8e9eda84a3db893
-      internalID: 1704251016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blood splatter_1
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 207
-        width: 33
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8ac657439d431342903268af0fa04e5
-      internalID: 1037709144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blood splatter_3
-      rect:
-        serializedVersion: 2
-        x: 187
-        y: 152
-        width: 58
-        height: 94
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0ac36af3c3b324468781b30779ef41d
-      internalID: 1452988517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blood splatter_5
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 157
-        width: 26
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2040ce412935964892af2845090d926
-      internalID: 1725945960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blood splatter_8
-      rect:
-        serializedVersion: 2
-        x: 4
+        x: 3
         y: 25
-        width: 107
-        height: 129
+        width: 108
+        height: 130
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,30 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bab7965d8340c8148a722932cd2c7b91
-      internalID: -796803461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blood splatter_12
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 66
-        width: 62
-        height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7b5f7b3459907647aa70c9f73bfa903
-      internalID: 689442370
+      spriteID: 62ada39380a512449b1bebb225c112df
+      internalID: -2120210695
       vertices: []
       indices: 
       edges: []
@@ -259,21 +149,8 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Blood splatter_0: 1704251016
-      Blood splatter_1: 1037709144
-      Blood splatter_10: -475588111
-      Blood splatter_11: 1634034723
-      Blood splatter_12: 689442370
-      Blood splatter_13: -1700963231
-      Blood splatter_14: -1853597257
-      Blood splatter_2: 1247575580
-      Blood splatter_3: 1452988517
-      Blood splatter_4: 1664656879
-      Blood splatter_5: 1725945960
-      Blood splatter_6: -1877183033
-      Blood splatter_7: 1774317463
-      Blood splatter_8: -796803461
-      Blood splatter_9: -1248553458
+      1_BloodSplatter_0: -2120210695
+      1_BloodSplatter_1: 947800273
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
