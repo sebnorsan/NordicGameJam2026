@@ -25,5 +25,7 @@ public class MainMenu_Start : MonoBehaviour
 		animFinished = true;
 
 		GetComponentInParent<SceneSwitcher>().GetComponent<Animator>().SetTrigger("Finish");
+
+		ScreenSummoner.SummonScreen(Color.black, 1f, true);
 	}
 }
