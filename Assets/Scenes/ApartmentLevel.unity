@@ -176,6 +176,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &21608589
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2514,6 +2515,11 @@ Transform:
   - {fileID: 919207681}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &235217112 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7419477156746137580, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
+  m_PrefabInstance: {fileID: 305054033}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &243822536
 GameObject:
   m_ObjectHideFlags: 0
@@ -3498,7 +3504,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1484801976697885679, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1804141202}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
 --- !u!1 &327970265
@@ -3558,6 +3567,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &327970268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6728,6 +6738,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &373763278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7432,6 +7443,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45f23d9fb9104274eb6c86f8602e1967, type: 3}
+--- !u!4 &430977954 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1484801976697885679, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
+  m_PrefabInstance: {fileID: 305054033}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &439766235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17541,6 +17557,80 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed50f8792635828488e621db6996c116, type: 3}
+--- !u!1 &575342650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 0f97fb8cc1692f6498e8d5ea29c97f5b, type: 3}
+  m_PrefabInstance: {fileID: 729570734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &575342654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575342650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Evidence
+  timeTillCompletion: 1
+  progressionStarted: 0
+  mag: 0
+  rough: 0
+  progressionBased: 0
+  toolToUse: 0
+  evidenceName: a dead body on the floor
+  popupTextOnPickup: 
+  specialToActivate: 0
+--- !u!54 &575342655
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575342650}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &575342656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575342650}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.6, y: 1.2, z: 5.2}
+  m_Center: {x: -0.5, y: 0.6, z: 0.19999993}
 --- !u!1001 &603156777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17998,7 +18088,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a4f104d788996284bac7911ce866d92f, type: 2}
     - target: {fileID: 919132149155446097, guid: 0f97fb8cc1692f6498e8d5ea29c97f5b, type: 3}
       propertyPath: m_Name
-      value: body
+      value: BodyEvidence
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18006,7 +18096,16 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0f97fb8cc1692f6498e8d5ea29c97f5b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1394350907}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 0f97fb8cc1692f6498e8d5ea29c97f5b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 575342656}
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 0f97fb8cc1692f6498e8d5ea29c97f5b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 575342655}
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 0f97fb8cc1692f6498e8d5ea29c97f5b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 575342654}
   m_SourcePrefab: {fileID: 100100000, guid: 0f97fb8cc1692f6498e8d5ea29c97f5b, type: 3}
 --- !u!4 &729570735 stripped
 Transform:
@@ -22363,6 +22462,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the wall
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &880302856
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22547,6 +22647,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &889596846
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22818,7 +22919,10 @@ MonoBehaviour:
   evidenceOrder: []
   evidenceActive: 
   specialEvidenceActive: 
-  evidenceEvents: []
+  evidenceEvents:
+  - evidenceBase: a dead body in your arms
+    eventId: 0
+    objToActivate: {fileID: 1559374823}
 --- !u!4 &939679925
 Transform:
   m_ObjectHideFlags: 0
@@ -27120,6 +27224,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the wall
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &1167691406
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28011,6 +28116,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &1309335519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28381,6 +28487,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &1346891414
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28794,6 +28901,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood of the victim
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!54 &1394350912
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29385,6 +29493,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &1472366934
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29568,6 +29677,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the wall
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &1483617936
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30375,6 +30485,78 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &1559374823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1559374824}
+  - component: {fileID: 1559374826}
+  - component: {fileID: 1559374825}
+  m_Layer: 3
+  m_Name: DeadBody
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1559374824
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559374823}
+  m_LocalRotation: {x: 9.3132246e-10, y: -0, z: -0.021980107, w: 0.9997585}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 7.2618146, y: 7.2618146, z: 7.2618146}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1804141202}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.519}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -97, y: -185}
+  m_SizeDelta: {x: 320, y: 180}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1559374825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559374823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: eb706bb5e6b73234593f6b256723a1cb, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1559374826
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559374823}
+  m_CullTransparentMesh: 1
 --- !u!1 &1565460712
 GameObject:
   m_ObjectHideFlags: 0
@@ -31700,6 +31882,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the wall
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &1701493825
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31862,6 +32045,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &1701851674
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32703,6 +32887,109 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &1804141201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1804141202}
+  - component: {fileID: 1804141205}
+  - component: {fileID: 1804141204}
+  - component: {fileID: 1804141203}
+  m_Layer: 3
+  m_Name: EvidenceCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1804141202
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804141201}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1559374824}
+  m_Father: {fileID: 430977954}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &1804141203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804141201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1804141204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804141201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1804141205
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804141201}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 1
+  m_Camera: {fileID: 235217112}
+  m_PlaneDistance: 0.02
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1828595902
 GameObject:
   m_ObjectHideFlags: 0
@@ -32759,6 +33046,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the wall
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &1828595905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33375,6 +33663,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the wall
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &2026689528
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34055,6 +34344,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &2099045725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34239,6 +34529,7 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  specialToActivate: -1
 --- !u!65 &2125531003
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34483,6 +34774,7 @@ MeshFilter:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 939679925}
   - {fileID: 1365480260}
   - {fileID: 907099817}
   - {fileID: 1288089308}
@@ -34507,7 +34799,6 @@ SceneRoots:
   - {fileID: 216808978}
   - {fileID: 1933113457}
   - {fileID: 202439615}
-  - {fileID: 939679925}
   - {fileID: 1172253957}
   - {fileID: 764454896}
   - {fileID: 729570734}

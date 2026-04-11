@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 
 public class Evidence : InteractionProgression, IInteractable
 {
@@ -17,6 +18,10 @@ public class Evidence : InteractionProgression, IInteractable
 
 	[TextArea]
 	public string popupTextOnPickup;
+
+	[Space(10)]
+
+	public int specialToActivate = -1;
 
 	public bool canInteract { get; set; } = true;
 
@@ -43,6 +48,9 @@ public class Evidence : InteractionProgression, IInteractable
 		if (progressionBased)
 			base.FinishAnimation();
 
+		if (specialToActivate != -1)
+			EvidenceManager.instance.SetSpecialEvidenceEvent(specialToActivate);
+
 		Destroy(gameObject);
 	}
 
@@ -61,6 +69,7 @@ public class Evidence : InteractionProgression, IInteractable
 		else
 			return false;
 	}
+	public bool IsSpecial() => specialToActivate != -1;
 }
 
 public enum Tool
