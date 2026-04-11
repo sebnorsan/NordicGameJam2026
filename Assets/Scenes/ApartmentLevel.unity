@@ -27640,6 +27640,7 @@ GameObject:
   - component: {fileID: 1394350909}
   - component: {fileID: 1394350908}
   - component: {fileID: 1394350911}
+  - component: {fileID: 1394350912}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -27656,7 +27657,7 @@ Transform:
   m_GameObject: {fileID: 1394350906}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.848539, z: -0, w: 0.5291329}
-  m_LocalPosition: {x: -2.85, y: 0.26000008, z: -11.48}
+  m_LocalPosition: {x: -2.85, y: 0.13, z: -11.48}
   m_LocalScale: {x: 3.1057, y: 3.1057, z: 3.1057}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27757,10 +27758,37 @@ MonoBehaviour:
   progressionStarted: 0
   mag: 2
   rough: 3
-  progressionBased: 0
+  progressionBased: 1
   toolToUse: 1
   evidenceName: The victims blood
   popupTextOnPickup: 
+--- !u!54 &1394350912
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394350906}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1443380935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29993,7 +30021,7 @@ Transform:
   m_GameObject: {fileID: 1701851671}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.4015056, z: -0, w: 0.9158566}
-  m_LocalPosition: {x: -5.63, y: 0.010999978, z: 10.71}
+  m_LocalPosition: {x: -5.63, y: 0.04, z: 10.71}
   m_LocalScale: {x: 0.15522112, y: 0.12201, z: 0.20073086}
   m_ConstrainProportionsScale: 0
   m_Children: []
