@@ -236,42 +236,6 @@ public class EventManager : MonoBehaviour
 	}
 	#endregion
 
-	#region ===== UI: Screen Summon =====
-	public static void SummonScreen(Color screenColor, float lerpTime, bool transToFilled)
-	{
-		CoroutineRunner.instance.StartCoroutine(SummonScreenCoroutine(screenColor, lerpTime, transToFilled));
-	}
-
-	private static IEnumerator SummonScreenCoroutine(Color screenColor, float lerpTime, bool transToFilled)
-	{
-		// Prefer serialized prefab on the singleton; otherwise fall back to Resources like the new version
-		GameObject prefab = instance && instance.screenSummonPrefab
-			? instance.screenSummonPrefab
-			: Resources.Load<GameObject>("Prefabs/Screen");
-
-		GameObject temp = Object.Instantiate(prefab);
-		Image img = temp.GetComponentInChildren<Image>();
-
-		float startAlpha = transToFilled ? 0f : 1f;
-		float endAlpha = transToFilled ? 1f : 0f;
-		float tElapsed = 0f;
-
-		while (tElapsed < lerpTime)
-		{
-			tElapsed += Time.deltaTime;
-			float t = tElapsed / lerpTime;
-			float a = Mathf.Lerp(startAlpha, endAlpha, t);
-			img.color = new Color(screenColor.r, screenColor.g, screenColor.b, a);
-			yield return null;
-		}
-
-		img.color = new Color(screenColor.r, screenColor.g, screenColor.b, endAlpha);
-
-		if (!transToFilled)
-			Object.Destroy(temp);
-	}
-	#endregion
-
 	#region ===== Scene Management (with transition) =====
 	public static void LoadSceneWithTransition(Color screenColor, float lerpTime, string sceneName)
 	{
@@ -285,14 +249,14 @@ public class EventManager : MonoBehaviour
 	}
 	private static IEnumerator SceneLoader(Color screenColor, float lerpTime, string sceneName)
 	{
-		SummonScreen(screenColor, lerpTime, true);
+		ScreenSummoner.SummonScreen(screenColor, lerpTime, true);
 		yield return new WaitForSeconds(lerpTime);
 
 		yield return new WaitForSeconds(.5f);
 		SceneManager.LoadScene(sceneName);
 		yield return null;
 
-		SummonScreen(screenColor, lerpTime, false);
+		ScreenSummoner.SummonScreen(screenColor, lerpTime, false);
 	}
 	#endregion
 }
