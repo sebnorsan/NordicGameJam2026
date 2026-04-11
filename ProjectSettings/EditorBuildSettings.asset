@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CourtRoomInitial.unity
     guid: 08d806a2517722d41bcb4bb5db0e8ec9
   - enabled: 1
+    path: Assets/Scenes/ApartmentCutscene.unity
+    guid: b944a8f425c728742a3e5f87a7328e53
+  - enabled: 1
     path: Assets/Scenes/ApartmentLevel.unity
     guid: 4620d0341bfa33f40aa775c92424bc47
   m_configObjects:

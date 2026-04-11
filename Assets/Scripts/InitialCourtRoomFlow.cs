@@ -43,7 +43,7 @@ public class InitialCourtRoomFlow : MonoBehaviour
 	}
 	private void Change()
 	{
-		SceneManager.LoadScene("ApartmentLevel");
+		SceneManager.LoadScene("ApartmentCutscene");
 	}
 	public void AE_FinishInitialAnimation()
 	{
