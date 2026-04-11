@@ -25,7 +25,15 @@ public class EvidenceManager : MonoBehaviour
     {
         public string evidenceBase;
         public int eventId;
+        public GameObject objToActivate;
     }
+	private void Awake()
+	{
+        if (instance != null)
+            Destroy(gameObject);
+        else
+            instance = this;
+	}
 	private void Start()
 	{
 		if (evidenceOrder.Count > 0)
@@ -47,6 +55,7 @@ public class EvidenceManager : MonoBehaviour
             SceneManager.LoadScene("CourtRoomFinished");
         }
 	}
+    public bool IsSpecialActive() => !specialEvidenceActive.IsNullOrEmpty();
 	public void SetSpecialEvidenceEvent(int id)
     {
         string eToUse = "";
@@ -55,13 +64,21 @@ public class EvidenceManager : MonoBehaviour
             foreach (var evidenceEvent in evidenceEvents)
             {
                 if (evidenceEvent.eventId == id)
-                    eToUse = evidenceEvent.evidenceBase;
-            }
+                {
+					eToUse = evidenceEvent.evidenceBase;
+                    evidenceEvent.objToActivate.SetActive(true);
+				}
+			}
 
         specialEvidenceActive = eToUse;
     }
     public void ResetSpecialEvidenceEvent()
     {
+        foreach (var evidenceEvent in evidenceEvents)
+        {
+			evidenceEvent.objToActivate.SetActive(false);
+		}
+
         SetSpecialEvidenceEvent(-1);
     }
     public void RemoveEvidence(Evidence evidence)
