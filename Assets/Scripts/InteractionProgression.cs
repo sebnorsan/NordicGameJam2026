@@ -3,6 +3,9 @@ using UnityEngine;
 
 public abstract class InteractionProgression : MonoBehaviour
 {
+	[Header("Only needs to be used if (progressionBased = true)")]
+	[Space(5)]
+
 	public float timeTillCompletion = 1f;
 	[HideInInspector] public bool progressionStarted = false;
 
