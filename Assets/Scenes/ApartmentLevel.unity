@@ -151,7 +151,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.30541533, z: -0, w: 0.9522193}
   m_LocalPosition: {x: 2.436, y: 0.010999978, z: -5.301}
-  m_LocalScale: {x: 0.12201, y: 0.12201, z: 0.20073086}
+  m_LocalScale: {x: 0.06572313, y: 0.12201, z: 0.11008735}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1933113457}
@@ -271,7 +271,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 06c9f23043770ed4b8514196a1697ec8, type: 2}
+  - {fileID: 2100000, guid: 4e025e4745d6ace43b9006d29ffb5d72, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3029,13 +3029,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327970265}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.23140149, z: -0, w: 0.97285837}
-  m_LocalPosition: {x: -4.65, y: 0.010999978, z: -0.78999996}
-  m_LocalScale: {x: 0.12201, y: 0.12201, z: 0.20073086}
+  m_LocalRotation: {x: -0, y: -0.97117096, z: -0, w: -0.23838405}
+  m_LocalPosition: {x: -4.452, y: 0.010999978, z: -1.22}
+  m_LocalScale: {x: 0.095222704, y: 0.12201, z: 0.14378151}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1933113457}
-  m_LocalEulerAnglesHint: {x: 0, y: -26.759, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -207.582, z: 0}
 --- !u!114 &327970267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3151,7 +3151,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 2972a159aff3c884683192f05e9921ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20856,7 +20856,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.70710677, w: 0.7071068}
   m_LocalPosition: {x: 3.08, y: 1.633, z: -0.952}
-  m_LocalScale: {x: 0.12201, y: 0.12201, z: 0.14551581}
+  m_LocalScale: {x: 0.09740056, y: 0.12201, z: 0.11165429}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1933113457}
@@ -20976,7 +20976,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 2972a159aff3c884683192f05e9921ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21039,8 +21039,8 @@ Transform:
   m_GameObject: {fileID: 889596843}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4703101, y: 0.010999978, z: -9.45514}
-  m_LocalScale: {x: 0.12201, y: 0.12201, z: 0.20073086}
+  m_LocalPosition: {x: -8.46, y: 0.010999978, z: 9.82}
+  m_LocalScale: {x: 0.28880987, y: 0.28880987, z: 0.47515002}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1933113457}
@@ -21057,10 +21057,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 1
+  timeTillCompletion: 5
   progressionStarted: 0
-  mag: 0
-  rough: 0
+  mag: 2
+  rough: 3
   progressionBased: 1
   toolToUse: 1
   evidenceName: Blood on the floor
@@ -26135,8 +26135,8 @@ Transform:
   m_GameObject: {fileID: 1167691403}
   serializedVersion: 2
   m_LocalRotation: {x: -0.15546572, y: 0.15546572, z: 0.6898047, w: 0.6898047}
-  m_LocalPosition: {x: 3.08, y: 1.61, z: 5.12}
-  m_LocalScale: {x: 0.24940065, y: 0.12201, z: 0.1270193}
+  m_LocalPosition: {x: 3.08, y: 0.773, z: 5.799}
+  m_LocalScale: {x: 0.1446908, y: 0.12201, z: 0.09294383}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1933113457}
@@ -26234,7 +26234,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 4e025e4745d6ace43b9006d29ffb5d72, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27147,7 +27147,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 4e025e4745d6ace43b9006d29ffb5d72, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27324,7 +27324,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.16133808, z: -0, w: 0.98689926}
   m_LocalPosition: {x: -4.23, y: 0.010999978, z: -4.82}
-  m_LocalScale: {x: 0.12201, y: 0.12201, z: 0.17439497}
+  m_LocalScale: {x: 0.12201, y: 0.12201, z: 0.13595483}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1933113457}
@@ -27444,7 +27444,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 06c9f23043770ed4b8514196a1697ec8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29972,7 +29972,7 @@ Transform:
   m_GameObject: {fileID: 1701851671}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.4015056, z: -0, w: 0.9158566}
-  m_LocalPosition: {x: -5.89, y: 0.010999978, z: 11.1}
+  m_LocalPosition: {x: -5.63, y: 0.010999978, z: 10.71}
   m_LocalScale: {x: 0.15522112, y: 0.12201, z: 0.20073086}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31145,10 +31145,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 1
+  timeTillCompletion: 5
   progressionStarted: 0
-  mag: 0
-  rough: 0
+  mag: 2
+  rough: 3
   progressionBased: 1
   toolToUse: 1
   evidenceName: Blood on the wall
@@ -31248,7 +31248,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 54b8f22e80a09a146818c2f948d0f295, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32111,7 +32111,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 686eed566ad792d40ac29d5c2e585b4a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
