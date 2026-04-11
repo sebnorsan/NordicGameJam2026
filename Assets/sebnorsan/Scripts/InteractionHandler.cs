@@ -47,8 +47,10 @@ public class InteractionHandler : MonoBehaviour
 
 		// Visual state (compute once per frame)
 		bool hasHit = TryGetFirstValidHit(ray, out RaycastHit hit);
-		bool isLooking = hasHit && hit.transform.TryGetComponent<IInteractable>(out var lookInteractable) && lookInteractable.canInteract && 
-			hit.transform.TryGetComponent<Evidence>(out var evidence) && evidence.GetToolAvailable(null);
+		bool isLooking = hasHit && hit.transform.TryGetComponent<IInteractable>(out var lookInteractable) && lookInteractable.canInteract;
+		if (hasHit && hit.transform.TryGetComponent<Evidence>(out var evidence))
+			isLooking = evidence.GetToolAvailable(ToolHolder.instance.GetToolsHeld);
+
 
 		if (interactionKeyAnimator)
 			interactionKeyAnimator.SetBool("LookingAtInteractable", isLooking);
