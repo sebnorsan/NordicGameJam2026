@@ -1,3 +1,4 @@
+using EasyTextEffects.Editor.MyBoxCopy.Extensions;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +12,7 @@ public class EvidenceManager : MonoBehaviour
     [Space(5)]
 
     //For example bloodied hands / clothes, or the clothes being in the drier
-    [SerializeField] private Evidence specialEvidenceActive = null;
+    [SerializeField] private string specialEvidenceActive = "";
 
     [Space(5)]
 
@@ -20,7 +21,7 @@ public class EvidenceManager : MonoBehaviour
     [Serializable]
     public class EvidenceEvents
     {
-        public Evidence evidenceBase;
+        public string evidenceBase;
         public int eventId;
     }
 	private void Start()
@@ -35,7 +36,7 @@ public class EvidenceManager : MonoBehaviour
 	}
 	public void SetSpecialEvidenceEvent(int id)
     {
-        Evidence eToUse = null;
+        string eToUse = "";
 
         if (id != -1)
             foreach (var evidenceEvent in evidenceEvents)
@@ -54,5 +55,15 @@ public class EvidenceManager : MonoBehaviour
     {
         if (evidenceOrder.Contains(evidence))
             evidenceOrder.Remove(evidence);
+    }
+    public string GetEvidenceRemaining()
+    {
+        if (!specialEvidenceActive.IsNullOrEmpty()) 
+            return specialEvidenceActive;
+
+        if (evidenceOrder.Count <= 0) 
+            return evidenceOrder[0].evidenceName;
+
+        return string.Empty;
     }
 }

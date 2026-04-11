@@ -449,8 +449,8 @@ MonoBehaviour:
   mag: 0
   rough: 0
   progressionBased: 0
-  toolToUse: 0
-  evidenceName: 
+  toolToUse: 1
+  evidenceName: Blood in the living room
   popupTextOnPickup: 
 --- !u!65 &641748031
 BoxCollider:

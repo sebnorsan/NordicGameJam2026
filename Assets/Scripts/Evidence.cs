@@ -66,5 +66,7 @@ public class Evidence : InteractionProgression, IInteractable
 public enum Tool
 {
     None,
-    Mop
+    Mop,
+	Screwdriver,
+	Knife
 }
