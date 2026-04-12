@@ -7679,6 +7679,10 @@ PrefabInstance:
       propertyPath: locked
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5515765707112306842, guid: 7ad84635ca6a01f45ab4534c8c8ade03, type: 3}
+      propertyPath: keyIdLocked
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6924142450625418240, guid: 7ad84635ca6a01f45ab4534c8c8ade03, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.92490005
@@ -18297,6 +18301,10 @@ PrefabInstance:
       propertyPath: locked
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5515765707112306842, guid: 7ad84635ca6a01f45ab4534c8c8ade03, type: 3}
+      propertyPath: keyIdLocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6924142450625418240, guid: 7ad84635ca6a01f45ab4534c8c8ade03, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9219003
@@ -18542,7 +18550,7 @@ MonoBehaviour:
   rough: 0
   progressionBased: 0
   toolToAquire: 0
-  keyIdToAquire: 0
+  keyIdToAquire: 3
   popupTextOnPickup: 
 --- !u!65 &586184931
 BoxCollider:
@@ -22306,7 +22314,7 @@ MonoBehaviour:
   rough: 0
   progressionBased: 0
   toolToAquire: 0
-  keyIdToAquire: 0
+  keyIdToAquire: 2
   popupTextOnPickup: 
 --- !u!65 &764454893
 BoxCollider:
@@ -29050,7 +29058,7 @@ MonoBehaviour:
   rough: 0
   progressionBased: 0
   toolToAquire: 0
-  keyIdToAquire: 0
+  keyIdToAquire: 1
   popupTextOnPickup: 
 --- !u!65 &1172253954
 BoxCollider:
@@ -36771,6 +36779,10 @@ PrefabInstance:
     - target: {fileID: 106204339129251900, guid: 7ad84635ca6a01f45ab4534c8c8ade03, type: 3}
       propertyPath: m_Name
       value: DoorPrefab (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515765707112306842, guid: 7ad84635ca6a01f45ab4534c8c8ade03, type: 3}
+      propertyPath: keyIdLocked
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6924142450625418240, guid: 7ad84635ca6a01f45ab4534c8c8ade03, type: 3}
       propertyPath: m_LocalPosition.x
