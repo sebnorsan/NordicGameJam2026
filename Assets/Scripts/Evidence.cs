@@ -60,6 +60,8 @@ public class Evidence : InteractionProgression, IInteractable
 		if (specialToActivate != -1)
 			EvidenceManager.instance.SetSpecialEvidenceEvent(specialToActivate);
 
+		EvidenceManager.instance.RemoveEvidence(this);
+
 		FindAnyObjectByType<Popup>().Fade(popupTextOnPickup);
 
 		foreach (var obj in objToActivate)

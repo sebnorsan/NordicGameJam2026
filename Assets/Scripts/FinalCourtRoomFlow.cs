@@ -106,10 +106,10 @@ public class FinalCourtRoomFlow : MonoBehaviour
 	{
 		if (guilty)
 			//Guilty cutscene
-			SceneManager.LoadScene("MainMenu");
+			SceneManager.LoadScene("GuiltyScene");
 		else
 			//Inoccent cutscene
-			SceneManager.LoadScene("MainMenu");
+			SceneManager.LoadScene("NotGuiltyScene");
 	}
 	public void AE_FinishInitialAnimation()
 	{

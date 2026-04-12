@@ -20,5 +20,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CourtRoomFinished.unity
     guid: e1f24a13064d32148a01948e5cb7d093
+  - enabled: 1
+    path: Assets/Scenes/GuiltyScene.unity
+    guid: 78588857e1a8c594c8096e545f29752a
+  - enabled: 1
+    path: Assets/Scenes/NotGuiltyScene.unity
+    guid: cf63e0203d4a71b4cb4f2a4da8be2a36
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
