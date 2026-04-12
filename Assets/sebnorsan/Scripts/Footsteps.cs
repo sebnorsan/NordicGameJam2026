@@ -42,6 +42,8 @@ public class Footsteps : MonoBehaviour
 	}
 	private void PlayFootstep()
 	{
+		return;
+
 		if (currLib != null)
 		{
 			var audio = currLib.footsteps[Random.Range(0, currLib.footsteps.Length)];
