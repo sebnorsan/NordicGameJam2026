@@ -36,7 +36,6 @@ public class PlayerController : MonoBehaviour
 	public float maxFallSpeed = -15f;
 
 	[Header("Input")]
-	[SerializeField] KeyCode crouchKey = KeyCode.LeftControl;
 	public bool runToggle = false;
 
 	[HideInInspector] public CharacterController characterController;
