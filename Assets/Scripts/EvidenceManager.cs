@@ -1,6 +1,7 @@
 using EasyTextEffects.Editor.MyBoxCopy.Extensions;
 using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -82,15 +83,31 @@ public class EvidenceManager : MonoBehaviour
 
         SetSpecialEvidenceEvent(-1);
     }
-    public void RemoveEvidence(Evidence evidence)
-    {
-        if (evidenceOrder.Contains(evidence))
-            evidenceOrder.Remove(evidence);
+	public void RemoveEvidence(Evidence evidence)
+	{
+		Debug.Log("Before: " + evidenceOrder.Count);
+
+		if (evidenceOrder.Contains(evidence))
+			evidenceOrder.Remove(evidence);
+
+		Debug.Log("After: " + evidenceOrder.Count);
 
 		if (evidenceOrder.Count > 0)
-			 evidenceActive = evidenceOrder[0].evidenceName;
+			for (int i = 0; i < evidenceOrder.Count; i++)
+            {
+                if (evidenceOrder[i] != null)
+                {
+					evidenceActive = evidenceOrder[i].evidenceName;
+                    break;
+				}
+			}
+        else
+			evidenceActive = "";
+
+		
+		
 	}
-    public string GetEvidenceRemaining()
+	public string GetEvidenceRemaining()
     {
         Destroy(gameObject, .1f);
 

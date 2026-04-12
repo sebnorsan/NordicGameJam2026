@@ -2928,7 +2928,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 305054036}
-  m_PlaneDistance: 0.05
+  m_PlaneDistance: 0.1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -4623,7 +4623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5048670043011777103, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 179.7
+      value: 179.70001
       objectReference: {fileID: 0}
     - target: {fileID: 7128100541171777877, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
       propertyPath: m_IsActive
@@ -4631,7 +4631,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7646013664373529180, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 179.7
+      value: 179.70001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857726927498801423, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8475282782636667074, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
       propertyPath: m_IsActive
@@ -34061,7 +34065,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -67.399994}
+  m_AnchoredPosition: {x: 0, y: -67.400024}
   m_SizeDelta: {x: 1796.99, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1602466740
