@@ -235,7 +235,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21608586}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -4617,9 +4617,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5048670043011777103, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 179.7
+      objectReference: {fileID: 0}
     - target: {fileID: 7128100541171777877, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7646013664373529180, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 179.7
       objectReference: {fileID: 0}
     - target: {fileID: 8475282782636667074, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
       propertyPath: m_IsActive
@@ -4797,7 +4805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 1
+  timeTillCompletion: 0.5
   progressionStarted: 0
   mag: 2
   rough: 3
@@ -24616,7 +24624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 1
+  timeTillCompletion: 0.5
   progressionStarted: 0
   mag: 0
   rough: 0
@@ -24804,7 +24812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 5
+  timeTillCompletion: 3
   progressionStarted: 0
   mag: 2
   rough: 3
@@ -31598,7 +31606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 5
+  timeTillCompletion: 4
   progressionStarted: 0
   mag: 2
   rough: 3
@@ -32224,7 +32232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 2
+  timeTillCompletion: 1
   progressionStarted: 0
   mag: 2
   rough: 3
@@ -34050,7 +34058,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -67.4}
+  m_AnchoredPosition: {x: 0, y: -67.399994}
   m_SizeDelta: {x: 1796.99, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1602466740
@@ -35599,7 +35607,7 @@ Transform:
   m_GameObject: {fileID: 1701851671}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.4015056, z: -0, w: 0.9158566}
-  m_LocalPosition: {x: -5.63, y: 0.04, z: 10.71}
+  m_LocalPosition: {x: -5.477, y: 0.04, z: 10.705}
   m_LocalScale: {x: 0.15522112, y: 0.12201, z: 0.20073086}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36696,7 +36704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 1
+  timeTillCompletion: 0.5
   progressionStarted: 0
   mag: 1
   rough: 1
@@ -37420,7 +37428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 5
+  timeTillCompletion: 3
   progressionStarted: 0
   mag: 2
   rough: 3
@@ -38270,7 +38278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 1
+  timeTillCompletion: 0.5
   progressionStarted: 0
   mag: 2
   rough: 3
@@ -38463,7 +38471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 1
+  timeTillCompletion: 0.5
   progressionStarted: 0
   mag: 2
   rough: 3
@@ -43620,7 +43628,7 @@ Transform:
   m_GameObject: {fileID: 8164078559412178865}
   serializedVersion: 2
   m_LocalRotation: {x: -0.43045917, y: 0.43045917, z: -0.5609856, w: 0.5609857}
-  m_LocalPosition: {x: -4.45, y: 0.20111, z: 19.061}
+  m_LocalPosition: {x: -4.458, y: 0.20111, z: 18.798}
   m_LocalScale: {x: 0.9607525, y: 0.9607525, z: 0.9607525}
   m_ConstrainProportionsScale: 0
   m_Children: []
