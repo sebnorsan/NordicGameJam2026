@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining = 30;
+    public float timeRemaining = 60;
     public TMP_Text timeDisplayed;
     public int minutes;
     public int seconds;
