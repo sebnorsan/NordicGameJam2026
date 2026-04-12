@@ -1,8 +1,6 @@
 using UnityEngine;
-using System.Collections.Generic;
-using JetBrains.Annotations;
 
-public class Evidence : InteractionProgression, IInteractable
+public class EvidenceActivator : InteractionProgression, IInteractable
 {
 	[Space(5)]
 
@@ -11,17 +9,12 @@ public class Evidence : InteractionProgression, IInteractable
 
 	[Space(5)]
 
-	public Tool toolToUse;
-	public string evidenceName;
+	public bool specialActivation;
+	public GameObject activeToWork;
 
-	[Space(5)]
+	[SerializeField] private GameObject[] objToDestroy;
 
-	[TextArea]
-	public string popupTextOnPickup;
-
-	[Space(10)]
-
-	public int specialToActivate = -1;
+	[SerializeField] private int specialToActivate = -1;
 
 	public bool canInteract { get; set; } = true;
 
@@ -48,33 +41,16 @@ public class Evidence : InteractionProgression, IInteractable
 		if (progressionBased)
 			base.FinishAnimation();
 
+		foreach (var obj in objToDestroy)
+		{
+			Destroy(obj);
+		}
+
+		EvidenceManager.instance.ResetSpecialEvidenceEvent();
+
 		if (specialToActivate != -1)
 			EvidenceManager.instance.SetSpecialEvidenceEvent(specialToActivate);
 
 		Destroy(gameObject);
 	}
-
-	public bool GetToolAvailable(List<Tool> toolsAvailable)
-	{
-		if (toolsAvailable == null)
-		{
-			if (toolToUse == Tool.None)
-				return true;
-			else
-				return false;
-		}
-
-		if (toolsAvailable.Contains(toolToUse))
-			return true;
-		else
-			return false;
-	}
-	public bool IsSpecial() => specialToActivate != -1;
-}
-
-public enum Tool
-{
-    None,
-    Mop,
-	Knife
 }

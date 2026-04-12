@@ -54,6 +54,13 @@ public class InteractionHandler : MonoBehaviour
 			if (evidence.IsSpecial() && EvidenceManager.instance && EvidenceManager.instance.IsSpecialActive())
 				isLooking = false;
 		}
+		if (hasHit && hit.transform.TryGetComponent<EvidenceActivator>(out var activator))
+		{
+			if (activator.specialActivation && activator.activeToWork.activeSelf)
+				isLooking = true;
+			else
+				isLooking = false;
+		}
 
 
 		if (interactionKeyAnimator)
