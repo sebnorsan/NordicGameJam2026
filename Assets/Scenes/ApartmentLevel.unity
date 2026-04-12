@@ -196,8 +196,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on hallway floor
@@ -235,7 +235,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21608586}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -2045,6 +2045,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 687c4782b24664b2195c474a3d3bb77e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c4e4e5ce5621bb34db7cabab3a609793, type: 2}
     - target: {fileID: 919132149155446097, guid: 687c4782b24664b2195c474a3d3bb77e, type: 3}
       propertyPath: m_Name
       value: KnifeHolder_MissingKnife.vox
@@ -4617,9 +4621,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5048670043011777103, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 179.7
+      objectReference: {fileID: 0}
     - target: {fileID: 7128100541171777877, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7646013664373529180, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 179.7
       objectReference: {fileID: 0}
     - target: {fileID: 8475282782636667074, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
       propertyPath: m_IsActive
@@ -4797,10 +4809,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 1
+  timeTillCompletion: 0.5
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood under bathroom door
@@ -7973,8 +7985,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on bedroom wall
@@ -24616,10 +24628,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 1
+  timeTillCompletion: 0.5
   progressionStarted: 0
-  mag: 0
-  rough: 0
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on painting in the hallway
@@ -24804,7 +24816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 5
+  timeTillCompletion: 3
   progressionStarted: 0
   mag: 2
   rough: 3
@@ -29728,10 +29740,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 1
+  timeTillCompletion: 0.5
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on hallway wall
@@ -30736,7 +30748,7 @@ Transform:
   m_GameObject: {fileID: 1309335516}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.6328447, z: -0, w: 0.77427876}
-  m_LocalPosition: {x: -4.83, y: 0.010999978, z: -2.98}
+  m_LocalPosition: {x: -5.427, y: 0.010999978, z: -2.344}
   m_LocalScale: {x: 0.12201, y: 0.12201, z: 0.17439497}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30756,8 +30768,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on bathroom floor
@@ -31156,8 +31168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on bathroom floor
@@ -31597,7 +31609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 5
+  timeTillCompletion: 3
   progressionStarted: 0
   mag: 2
   rough: 3
@@ -32205,7 +32217,7 @@ Transform:
   m_GameObject: {fileID: 1472366931}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.5102353, z: -0, w: 0.8600348}
-  m_LocalPosition: {x: 5.43, y: 0.010999978, z: 6.66}
+  m_LocalPosition: {x: 5.43, y: 0.010999978, z: 6.36}
   m_LocalScale: {x: 0.16593361, y: 0.12201, z: 0.20073086}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32223,10 +32235,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 2
+  timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood under bed
@@ -32412,8 +32424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on bedroom wall
@@ -33824,7 +33836,7 @@ MonoBehaviour:
   timeTillCompletion: 1
   progressionStarted: 0
   mag: 1
-  rough: 3
+  rough: 1
   progressionBased: 1
   toolToUse: 0
   evidenceName: crooked painting on the wall
@@ -34049,7 +34061,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -67.400024}
+  m_AnchoredPosition: {x: 0, y: -67.399994}
   m_SizeDelta: {x: 1796.99, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1602466740
@@ -35452,8 +35464,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on sofa wall
@@ -35598,7 +35610,7 @@ Transform:
   m_GameObject: {fileID: 1701851671}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.4015056, z: -0, w: 0.9158566}
-  m_LocalPosition: {x: -5.63, y: 0.04, z: 10.71}
+  m_LocalPosition: {x: -5.477, y: 0.04, z: 10.705}
   m_LocalScale: {x: 0.15522112, y: 0.12201, z: 0.20073086}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35616,10 +35628,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 1
+  timeTillCompletion: 0.5
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood under coffee table
@@ -36548,8 +36560,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on bedroom wall
@@ -36695,7 +36707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 1
+  timeTillCompletion: 0.5
   progressionStarted: 0
   mag: 1
   rough: 1
@@ -37419,7 +37431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 5
+  timeTillCompletion: 3
   progressionStarted: 0
   mag: 2
   rough: 3
@@ -38269,10 +38281,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 1
+  timeTillCompletion: 0.5
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on kitchen floor
@@ -38444,7 +38456,7 @@ Transform:
   m_GameObject: {fileID: 2125531000}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.6328447, z: -0, w: 0.77427876}
-  m_LocalPosition: {x: -2.5, y: 0.010999978, z: -5.98}
+  m_LocalPosition: {x: -3.301, y: 0.010999978, z: -6.119}
   m_LocalScale: {x: 0.05790839, y: 0.12201, z: 0.10781969}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38462,10 +38474,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
-  timeTillCompletion: 1
+  timeTillCompletion: 0.5
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: a bit of blood on bathroom floor
@@ -43619,7 +43631,7 @@ Transform:
   m_GameObject: {fileID: 8164078559412178865}
   serializedVersion: 2
   m_LocalRotation: {x: -0.43045917, y: 0.43045917, z: -0.5609856, w: 0.5609857}
-  m_LocalPosition: {x: -4.45, y: 0.20111, z: 19.061}
+  m_LocalPosition: {x: -4.458, y: 0.20111, z: 18.798}
   m_LocalScale: {x: 0.9607525, y: 0.9607525, z: 0.9607525}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43842,7 +43854,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8469494145858465668, guid: 1ff549fc6e4ee4d069c169578839fbc2, type: 3}
+  - {fileID: 2100000, guid: c4e4e5ce5621bb34db7cabab3a609793, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
