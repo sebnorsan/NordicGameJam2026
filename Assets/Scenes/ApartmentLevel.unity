@@ -202,6 +202,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &21608589
 BoxCollider:
@@ -555,6 +557,7 @@ MonoBehaviour:
   activeToWork: {fileID: 305054034}
   objToDestroy:
   - {fileID: 305054034}
+  objToActivate: []
   specialToActivate: -1
 --- !u!1 &27423445
 GameObject:
@@ -3419,6 +3422,7 @@ MonoBehaviour:
   activeToWork: {fileID: 1559374823}
   objToDestroy:
   - {fileID: 1559374823}
+  objToActivate: []
   specialToActivate: 1
 --- !u!65 &97510586
 BoxCollider:
@@ -4166,6 +4170,119 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.452}
+--- !u!1 &214298926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 214298927}
+  - component: {fileID: 214298930}
+  - component: {fileID: 214298929}
+  - component: {fileID: 214298928}
+  m_Layer: 7
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &214298927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214298926}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.48, y: 1.251, z: 0.601}
+  m_LocalScale: {x: 0.21926501, y: 0.21926501, z: 0.21926501}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 428021522}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!64 &214298928
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214298926}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &214298929
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214298926}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 24109236059ddd547bf5d58b0f17dd7a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &214298930
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214298926}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &216808977
 GameObject:
   m_ObjectHideFlags: 0
@@ -5306,6 +5423,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &327970268
 BoxCollider:
@@ -8477,6 +8596,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &373763278
 BoxCollider:
@@ -9187,7 +9308,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1151388028547126963, guid: 45f23d9fb9104274eb6c86f8602e1967, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 214298927}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 45f23d9fb9104274eb6c86f8602e1967, type: 3}
       insertIndex: -1
@@ -9196,6 +9320,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 26045128}
   m_SourcePrefab: {fileID: 100100000, guid: 45f23d9fb9104274eb6c86f8602e1967, type: 3}
+--- !u!4 &428021522 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1151388028547126963, guid: 45f23d9fb9104274eb6c86f8602e1967, type: 3}
+  m_PrefabInstance: {fileID: 428021521}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &439766235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19806,6 +19935,8 @@ MonoBehaviour:
   toolToUse: 0
   evidenceName: a dead body on the floor
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: 0
 --- !u!54 &575342655
 Rigidbody:
@@ -24726,6 +24857,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the wall
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &880302856
 BoxCollider:
@@ -24911,6 +25044,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &889596846
 BoxCollider:
@@ -29683,6 +29818,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the wall
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &1167691406
 BoxCollider:
@@ -30772,6 +30909,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &1309335519
 BoxCollider:
@@ -31169,6 +31308,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &1346891414
 BoxCollider:
@@ -31609,6 +31750,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood of the victim
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!54 &1394350912
 Rigidbody:
@@ -32405,6 +32548,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &1472366934
 BoxCollider:
@@ -32589,6 +32734,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the wall
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &1483617936
 BoxCollider:
@@ -33397,6 +33544,142 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &1555157378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1555157383}
+  - component: {fileID: 1555157382}
+  - component: {fileID: 1555157381}
+  - component: {fileID: 1555157380}
+  - component: {fileID: 1555157384}
+  m_Layer: 0
+  m_Name: CrookedPictureAnimation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!64 &1555157380
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555157378}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1555157381
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555157378}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 589eb8db04c9eb84ab012367303633e2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1555157382
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555157378}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1555157383
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555157378}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.183012, y: -0.6830129, z: 0.6830129, w: -0.18301196}
+  m_LocalPosition: {x: -1.99, y: 2.066, z: 14.692}
+  m_LocalScale: {x: 0.26177046, y: 0.15147, z: 0.15147}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 60, y: 90, z: 270}
+--- !u!95 &1555157384
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555157378}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2025e35f18e4702428a74ec284dc52c9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1559374823 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7128100541171777877, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
@@ -33440,8 +33723,9 @@ GameObject:
   - component: {fileID: 1565460715}
   - component: {fileID: 1565460714}
   - component: {fileID: 1565460713}
+  - component: {fileID: 1565460717}
   m_Layer: 0
-  m_Name: Picture
+  m_Name: CrookedPicture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33466,7 +33750,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1565460714
@@ -33534,13 +33818,38 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565460712}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000040589003, y: -0.7071068, z: 0.7071068, w: 0.00000042082445}
-  m_LocalPosition: {x: -1.99, y: 2.566, z: 14.692}
+  m_LocalRotation: {x: 0.183012, y: -0.6830129, z: 0.6830129, w: -0.18301196}
+  m_LocalPosition: {x: -1.99, y: 2.066, z: 14.692}
   m_LocalScale: {x: 0.26177046, y: 0.15147, z: 0.15147}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 60, y: 90, z: 270}
+--- !u!114 &1565460717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565460712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2da6a3e896dc6b4387b0d474c5df6bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Evidence
+  timeTillCompletion: 1
+  progressionStarted: 0
+  mag: 1
+  rough: 3
+  progressionBased: 1
+  toolToUse: 0
+  evidenceName: crooked painting on the wall
+  popupTextOnPickup: 
+  objToDestroy:
+  - {fileID: 1565460712}
+  objToActivate:
+  - {fileID: 1555157378}
+  specialToActivate: -1
 --- !u!43 &1567434956
 Mesh:
   m_ObjectHideFlags: 0
@@ -34803,6 +35112,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the wall
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &1701493825
 BoxCollider:
@@ -34966,6 +35277,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &1701851674
 BoxCollider:
@@ -35893,6 +36206,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the wall
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &1828595905
 BoxCollider:
@@ -36626,6 +36941,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the wall
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &2026689528
 BoxCollider:
@@ -37380,6 +37697,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &2099045725
 BoxCollider:
@@ -37565,6 +37884,8 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood on the floor
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
   specialToActivate: -1
 --- !u!65 &2125531003
 BoxCollider:
@@ -37850,6 +38171,7 @@ SceneRoots:
   - {fileID: 471449129}
   - {fileID: 816898765}
   - {fileID: 1565460716}
+  - {fileID: 1555157383}
   - {fileID: 491203587}
   - {fileID: 1509500540}
   - {fileID: 1312393142}
