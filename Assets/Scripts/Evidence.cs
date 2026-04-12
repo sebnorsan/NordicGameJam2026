@@ -27,6 +27,7 @@ public class Evidence : InteractionProgression, IInteractable
 	[Space(5)]
 
 	public int specialToActivate = -1;
+	public bool resetSpecial = false;
 
 	public bool canInteract { get; set; } = true;
 
@@ -52,6 +53,9 @@ public class Evidence : InteractionProgression, IInteractable
 	{
 		if (progressionBased)
 			base.FinishAnimation();
+
+		if (resetSpecial)
+			EvidenceManager.instance.ResetSpecialEvidenceEvent();
 
 		if (specialToActivate != -1)
 			EvidenceManager.instance.SetSpecialEvidenceEvent(specialToActivate);

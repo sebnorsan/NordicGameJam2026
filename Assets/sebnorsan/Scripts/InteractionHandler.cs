@@ -67,7 +67,7 @@ public class InteractionHandler : MonoBehaviour
 			interactionKeyAnimator.SetBool("LookingAtInteractable", isLooking);
 
 		// Interact input
-		if (Input.GetKeyDown(KeyCode.E))
+		if (Input.GetKeyDown(KeyCode.E) && isLooking)
 		{
 			if (isTalking)
 			{
