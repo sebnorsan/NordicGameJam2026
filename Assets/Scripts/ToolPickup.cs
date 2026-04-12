@@ -21,6 +21,9 @@ public class ToolPickup : InteractionProgression, IInteractable
 	[TextArea]
 	public string popupTextOnPickup;
 
+	[SerializeField] private GameObject[] objToDestroy;
+	[SerializeField] private GameObject[] objToActivate;
+
 	public bool canInteract { get; set; } = true;
 
 	private void Start()
@@ -45,6 +48,17 @@ public class ToolPickup : InteractionProgression, IInteractable
 	{
 		if (progressionBased)
 			base.FinishAnimation();
+
+		FindAnyObjectByType<Popup>().Fade(popupTextOnPickup);
+
+		foreach (var obj in objToDestroy)
+		{
+			Destroy(obj);
+		}
+		foreach (var obj in objToActivate)
+		{
+			obj.SetActive(true);
+		}
 
 		if (keyIdToAquire != -1)
 			ToolHolder.instance.AddKey(keyIdToAquire);
