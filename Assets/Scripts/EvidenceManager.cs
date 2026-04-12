@@ -49,7 +49,7 @@ public class EvidenceManager : MonoBehaviour
 	}
 	private void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.O))
+		if (Input.GetKeyDown(KeyCode.O) && Application.isEditor)
         {
             ScreenSummoner.SummonScreen(Color.black, .2f, false);
             SceneManager.LoadScene("CourtRoomFinished");

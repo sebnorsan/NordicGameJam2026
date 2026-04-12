@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] float crouchHeight = 1.0f;
 	[SerializeField] float gravity = 20.0f;
 	[SerializeField] float timeToRunning = 2.0f;
-	[HideInInspector] public bool canMove = true;
+	public bool canMove = true;
 	[HideInInspector] public bool canRun = true;
 
 	[Header("Ground & Coyote Time")]
