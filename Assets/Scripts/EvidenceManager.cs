@@ -76,7 +76,8 @@ public class EvidenceManager : MonoBehaviour
     {
         foreach (var evidenceEvent in evidenceEvents)
         {
-			evidenceEvent.objToActivate.SetActive(false);
+            if (evidenceEvent.objToActivate != null)
+			    evidenceEvent.objToActivate.SetActive(false);
 		}
 
         SetSpecialEvidenceEvent(-1);
