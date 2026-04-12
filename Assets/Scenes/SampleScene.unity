@@ -529,6 +529,9 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: Blood in the living room
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
+  specialToActivate: -1
 --- !u!65 &641748031
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1250,6 +1253,9 @@ MonoBehaviour:
   toolToUse: 1
   evidenceName: 
   popupTextOnPickup: 
+  objToDestroy: []
+  objToActivate: []
+  specialToActivate: -1
 --- !u!1 &1366692956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,10 +1589,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   evidenceOrder: []
+  evidenceActive: 
   specialEvidenceActive: 
   evidenceEvents:
   - evidenceBase: Bloodied hands
     eventId: 0
+    objToActivate: {fileID: 0}
 --- !u!1001 &1690175911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1672,6 +1680,7 @@ GameObject:
   - component: {fileID: 1774006657}
   - component: {fileID: 1774006659}
   - component: {fileID: 1774006658}
+  - component: {fileID: 1774006660}
   m_Layer: 3
   m_Name: Timer
   m_TagString: Untagged
@@ -1798,6 +1807,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774006656}
   m_CullTransparentMesh: 1
+--- !u!114 &1774006660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774006656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f66e39fe34996bf41aee38e66b0df7c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Timer
+  timeRemaining: 60
+  timeDisplayed: {fileID: 1774006658}
+  minutes: 0
+  seconds: 0
 --- !u!1001 &3584392162845965664
 PrefabInstance:
   m_ObjectHideFlags: 0
