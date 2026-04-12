@@ -25148,7 +25148,6 @@ MonoBehaviour:
   - {fileID: 1828595904}
   - {fileID: 1472366933}
   - {fileID: 1833747306}
-  - {fileID: 0}
   evidenceActive: 
   specialEvidenceActive: 
   evidenceEvents:
@@ -38457,7 +38456,7 @@ Transform:
   m_GameObject: {fileID: 2125531000}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.6328447, z: -0, w: 0.77427876}
-  m_LocalPosition: {x: -2.5, y: 0.010999978, z: -5.98}
+  m_LocalPosition: {x: -3.301, y: 0.010999978, z: -6.119}
   m_LocalScale: {x: 0.05790839, y: 0.12201, z: 0.10781969}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43855,7 +43854,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8469494145858465668, guid: 1ff549fc6e4ee4d069c169578839fbc2, type: 3}
+  - {fileID: 2100000, guid: c4e4e5ce5621bb34db7cabab3a609793, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
