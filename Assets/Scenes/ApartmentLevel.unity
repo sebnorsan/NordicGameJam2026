@@ -36781,6 +36781,10 @@ PrefabInstance:
       value: DoorPrefab (3)
       objectReference: {fileID: 0}
     - target: {fileID: 5515765707112306842, guid: 7ad84635ca6a01f45ab4534c8c8ade03, type: 3}
+      propertyPath: locked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515765707112306842, guid: 7ad84635ca6a01f45ab4534c8c8ade03, type: 3}
       propertyPath: keyIdLocked
       value: 3
       objectReference: {fileID: 0}
