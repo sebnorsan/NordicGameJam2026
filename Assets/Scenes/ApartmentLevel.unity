@@ -196,8 +196,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on hallway floor
@@ -4811,8 +4811,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 0.5
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood under bathroom door
@@ -7985,8 +7985,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on bedroom wall
@@ -24630,8 +24630,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 0.5
   progressionStarted: 0
-  mag: 0
-  rough: 0
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on painting in the hallway
@@ -29742,8 +29742,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 0.5
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on hallway wall
@@ -30768,8 +30768,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on bathroom floor
@@ -31168,8 +31168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on bathroom floor
@@ -32237,8 +32237,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood under bed
@@ -32424,8 +32424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on bedroom wall
@@ -33836,7 +33836,7 @@ MonoBehaviour:
   timeTillCompletion: 1
   progressionStarted: 0
   mag: 1
-  rough: 3
+  rough: 1
   progressionBased: 1
   toolToUse: 0
   evidenceName: crooked painting on the wall
@@ -35464,8 +35464,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on sofa wall
@@ -35630,8 +35630,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 0.5
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood under coffee table
@@ -36560,8 +36560,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 1
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on bedroom wall
@@ -38283,8 +38283,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 0.5
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: blood on kitchen floor
@@ -38476,8 +38476,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Evidence
   timeTillCompletion: 0.5
   progressionStarted: 0
-  mag: 2
-  rough: 3
+  mag: 1
+  rough: 1
   progressionBased: 1
   toolToUse: 1
   evidenceName: a bit of blood on bathroom floor
