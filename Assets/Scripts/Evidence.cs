@@ -21,6 +21,11 @@ public class Evidence : InteractionProgression, IInteractable
 
 	[Space(10)]
 
+	[SerializeField] private GameObject[] objToDestroy;
+	[SerializeField] private GameObject[] objToActivate;
+
+	[Space(5)]
+
 	public int specialToActivate = -1;
 
 	public bool canInteract { get; set; } = true;
@@ -50,6 +55,15 @@ public class Evidence : InteractionProgression, IInteractable
 
 		if (specialToActivate != -1)
 			EvidenceManager.instance.SetSpecialEvidenceEvent(specialToActivate);
+
+		foreach (var obj in objToActivate)
+		{
+			obj.SetActive(true);
+		}
+		foreach (var obj in objToDestroy)
+		{
+			Destroy(obj);
+		}
 
 		Destroy(gameObject);
 	}
