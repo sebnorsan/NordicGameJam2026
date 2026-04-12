@@ -24062,7 +24062,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 052a897b33ef9aa4988b5148a6a24327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EvidenceManager
-  evidenceOrder: []
+  evidenceOrder:
+  - {fileID: 575342654}
+  - {fileID: 1394350911}
+  - {fileID: 1701851673}
+  - {fileID: 1701493824}
+  - {fileID: 8164078559412178866}
+  - {fileID: 1565460717}
+  - {fileID: 2099045724}
+  - {fileID: 327970267}
+  - {fileID: 1309335518}
+  - {fileID: 1346891413}
+  - {fileID: 2125531002}
+  - {fileID: 2026689527}
+  - {fileID: 889596845}
+  - {fileID: 21608588}
+  - {fileID: 880302855}
+  - {fileID: 1167691405}
+  - {fileID: 1483617935}
+  - {fileID: 373763277}
+  - {fileID: 1828595904}
+  - {fileID: 1472366933}
+  - {fileID: 1833747306}
+  - {fileID: 0}
+  - {fileID: 0}
   evidenceActive: 
   specialEvidenceActive: 
   evidenceEvents:
