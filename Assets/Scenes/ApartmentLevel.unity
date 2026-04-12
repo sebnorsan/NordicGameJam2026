@@ -2048,7 +2048,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: 687c4782b24664b2195c474a3d3bb77e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f3c1b70677ff0db48a8df04504f2c050, type: 2}
+      objectReference: {fileID: 2100000, guid: c4e4e5ce5621bb34db7cabab3a609793, type: 2}
     - target: {fileID: 919132149155446097, guid: 687c4782b24664b2195c474a3d3bb77e, type: 3}
       propertyPath: m_Name
       value: KnifeHolder_MissingKnife.vox
