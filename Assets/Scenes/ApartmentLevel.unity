@@ -534,6 +534,28 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5999997, y: 2.6999998, z: 2.6999998}
   m_Center: {x: 0.6999999, y: 1.3499999, z: 0.6499999}
+--- !u!114 &26045128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26045120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1789d6e5253d84a8eeacffdc7329f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EvidenceActivator
+  timeTillCompletion: 2
+  progressionStarted: 0
+  mag: 1
+  rough: 4
+  progressionBased: 1
+  specialActivation: 1
+  activeToWork: {fileID: 305054034}
+  objToDestroy:
+  - {fileID: 305054034}
+  specialToActivate: -1
 --- !u!1 &27423445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,13 +2008,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97510582}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.0020426402, y: -0.0000073658625, z: 0.003606019, w: 0.9999914}
   m_LocalPosition: {x: 0.015, y: 0.33, z: 2.9999995}
   m_LocalScale: {x: 1.3149242, y: 1, z: 1.4725}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1007107028}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.234, y: 0, z: 0.413}
 --- !u!54 &97510584
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2041,7 +2063,7 @@ MonoBehaviour:
   activeToWork: {fileID: 1559374823}
   objToDestroy:
   - {fileID: 1559374823}
-  specialToActivate: -1
+  specialToActivate: 1
 --- !u!65 &97510586
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3853,6 +3875,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4134045964176506255, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8519620015595101908, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
       propertyPath: m_Name
       value: FirstPersonPlayerController
@@ -3862,6 +3888,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
+--- !u!1 &305054034 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4134045964176506255, guid: feccb33928fa16d4a8f711a88f638898, type: 3}
+  m_PrefabInstance: {fileID: 305054033}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &327970265
 GameObject:
   m_ObjectHideFlags: 0
@@ -7804,6 +7835,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 45f23d9fb9104274eb6c86f8602e1967, type: 3}
       insertIndex: -1
       addedObject: {fileID: 26045124}
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 45f23d9fb9104274eb6c86f8602e1967, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 26045128}
   m_SourcePrefab: {fileID: 100100000, guid: 45f23d9fb9104274eb6c86f8602e1967, type: 3}
 --- !u!1001 &439766235
 PrefabInstance:
@@ -23365,6 +23399,9 @@ MonoBehaviour:
   - evidenceBase: a dead body in your arms
     eventId: 0
     objToActivate: {fileID: 1559374823}
+  - evidenceBase: bloody clothes on your body
+    eventId: 1
+    objToActivate: {fileID: 305054034}
 --- !u!4 &939679925
 Transform:
   m_ObjectHideFlags: 0
