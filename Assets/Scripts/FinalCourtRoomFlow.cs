@@ -21,6 +21,8 @@ public class FinalCourtRoomFlow : MonoBehaviour
 
 	private bool guilty = false;
 
+	public AudioSource audioClick;
+
 	private void Start()
 	{
 		ScreenSummoner.SummonScreen(Color.black, 1f, false);
@@ -36,6 +38,8 @@ public class FinalCourtRoomFlow : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.E) && (canFlow || canVerdictFlow))
 		{
+			audioClick?.Play();
+
 			if (objFlow.Length <= currentFlow + 1 && !canVerdictFlow)
 			{
 				guiltyVerdict = FindAnyObjectByType<EvidenceManager>().GetEvidenceRemaining();
@@ -99,6 +103,7 @@ public class FinalCourtRoomFlow : MonoBehaviour
 	}
 	private void ChangeScenes()
 	{
+		FindAnyObjectByType<AudioSourceFader>().FadeOut();
 		ScreenSummoner.SummonScreen(Color.black, 2f, true);
 		Invoke(nameof(Change), 3f);
 	}

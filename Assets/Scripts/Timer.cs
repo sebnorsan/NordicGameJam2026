@@ -34,6 +34,8 @@ public class Timer : MonoBehaviour
     {
         finished = true;
 
+        FindAnyObjectByType<AudioSourceFader>().FadeOut();
+
         timeDisplayed.text = "Cops have arrived at your doorstep...";
 
         FindAnyObjectByType<PlayerController>().canMove = false;

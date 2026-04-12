@@ -8,7 +8,7 @@ public class InitialCourtRoomFlow : MonoBehaviour
 
 	private bool canFlow = false;
 
-
+	public AudioSource audioClick;
 	private void Start()
 	{
 		ScreenSummoner.SummonScreen(Color.black, 1f, false);
@@ -24,6 +24,8 @@ public class InitialCourtRoomFlow : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && canFlow)
         {
+			audioClick?.Play();
+
 			if (objFlow.Length <= currentFlow + 1)
 			{
 				canFlow = false;
@@ -38,6 +40,7 @@ public class InitialCourtRoomFlow : MonoBehaviour
     }
 	private void ChangeScenes()
 	{
+		FindAnyObjectByType<AudioSourceFader>().FadeOut();
 		ScreenSummoner.SummonScreen(Color.black, 2f, true);
 		Invoke(nameof(Change), 3f);
 	}

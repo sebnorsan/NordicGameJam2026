@@ -26,6 +26,8 @@ public class MainMenu_Start : MonoBehaviour
 
 		GetComponentInParent<SceneSwitcher>().GetComponent<Animator>().SetTrigger("Finish");
 
+		FindAnyObjectByType<AudioSourceFader>().FadeOut();
+
 		ScreenSummoner.SummonScreen(Color.black, 1f, true);
 	}
 }
